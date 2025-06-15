@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: producer-app
+  cloud:
+    stream:
+      bindings:
+        send-out-0:
+          destination: example-topic    # 메시지를 보낼 토픽 이름
+      default-binder: kafka             # 기본 바인더 설정
+  kafka:
+    bootstrap-servers: localhost:29092  # Kafka 브로커 주소
+
+server:
+  port: 8080
