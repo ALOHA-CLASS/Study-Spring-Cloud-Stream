@@ -1,4 +1,4 @@
-package com.test;
+package com.test.lambda_function;
 
 import java.util.function.Consumer;
 import java.util.function.Function;

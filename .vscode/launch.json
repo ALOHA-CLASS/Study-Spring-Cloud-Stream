@@ -1,0 +1,79 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProducerAppApplication<producer-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.producer_app.ProducerAppApplication",
+            "projectName": "producer-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=39279 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=producer-app"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ConsumerAppApplication<consumer-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.consumer_app.ConsumerAppApplication",
+            "projectName": "consumer-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=41459 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=consumer-app"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ProducerApp2Application<producer-app2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.producer_app2.ProducerApp2Application",
+            "projectName": "producer-app2",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=35493 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=producer-app2"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ConsumerApp2Application<consumer-app2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.consumer_app2.ConsumerApp2Application",
+            "projectName": "consumer-app2",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-OrderServiceApplication<order-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.order_service.OrderServiceApplication",
+            "projectName": "order-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=33849 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=order-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-InventoryServiceApplication<inventory-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.inventory_service.InventoryServiceApplication",
+            "projectName": "inventory-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=45067 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=inventory-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MailServiceApplication<mail-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.mail_service.MailServiceApplication",
+            "projectName": "mail-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

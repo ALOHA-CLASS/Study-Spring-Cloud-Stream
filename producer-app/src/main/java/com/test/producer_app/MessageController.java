@@ -7,7 +7,7 @@ package com.test.producer_app;
 
 import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,7 +24,8 @@ public class MessageController {
      * @param message 전송할 메시지
      * @return 전송 결과 문자열
      */
-    @GetMapping("/send")
+    // @RequestParam : 쿼리 파라미터, body 파라미터 등에서 메시지를 받음
+    @PostMapping("/send")
     public ResponseEntity<String> send(@RequestParam String message) {
         streamBridge.send("send-out-0", message); // 바인딩 이름으로 메시지 전송
         return ResponseEntity.ok("Sent: " + message); // 성공 응답 반환
